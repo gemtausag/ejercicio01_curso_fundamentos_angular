@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>News Wiki</title>
+
+    <!-- Page style-->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+    <!--Application Script-->
+    <script src="app/app.js"></script>
+    <!-- Angular Scripts-->
+    <script src="js/angular.min.js"></script>
+    <!--Application Script-->
+    <script src="app/app.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--Controller-->
+    <script src="app/news/newsCtrl.js"></script>
+
+
+
+</head>
+<body ng-app="newsWikiApp">
+<div class="container">
+     <div class="row" ng-controller="NewsCtrl">
+         <fieldset>
+             <legend class="titulo">Destacados</legend>
+         </fieldset>
+
+         <div class="row">
+             <div class="col-sm-6 col-md-4">
+                 <div class="thumbnail">
+                     <img src="">
+                     <div class="caption">
+                         <h3>{{mensaje}}</h3>
+                         <p>Descripcion de mi noticia</p>
+                         <p><a href="#" class="btn btn-primary"
+                               role="button">Leer Mas</a>
+                             <a href="#" class="btn btn-default"
+                                role="button">Editar</a></p>
+                     </div>
+                 </div>
+             </div>
+
+             <fieldset>
+                 <legend class="titulo">Ultimas Noticias</legend>
+             </fieldset>
+         </div>
+     </div>
+
+</div>
+</body>
+</html>
